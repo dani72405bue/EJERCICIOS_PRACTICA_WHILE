@@ -1,2 +1,3 @@
 # EJERCICIOS_PRACTICA_WHILE
-prracticas de el comando while 
+
+Ejercicios para practicar el comando while
