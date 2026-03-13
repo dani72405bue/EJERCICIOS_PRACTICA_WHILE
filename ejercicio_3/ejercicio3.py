@@ -1,15 +1,20 @@
 # programa de python para adivinar el numero 
 
-import random 
+import random
+#input
+cn=random. randint(1, 100)
 intento = 0
-numero = random.randint (1 , 100)
+n=1
+#processing and output
+while intento != cn:
+    intento = int(input ("Adivina el número (1-100): "))
+    n=n+1
 
-while intento != numero:
-    intento = int(input("adivina el numero desde el 1 hasta el 100: "))
+    if intento < cn:
+        print( "mas alto: ")
+    elif (intento>cn):
+        print("mas bajo: ")
+    else:
+        break
 
-    if intento < numero:
-        print ("el numero es mas alto")
-    elif intento > numero:
-        print ("el numeroes mas bajo")
-
-print ("FELICIDADES, HAZ ENCONTRADO EL NUMERO")
+print("LO CONSEGUISTE EN: " +str (n)+str(" intentos"))
